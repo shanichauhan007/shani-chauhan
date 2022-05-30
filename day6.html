@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <style>
+                body{
+                    background: black;
+                }
+                .one{
+                    height: 350px;
+                    width: 400px;
+                    background: blueviolet;
+                    background-size: cover;
+                    background-position: center center;
+                    background-image: url(clg.jpg);
+                    animation: ayush 2s alternate infinite ease-in;
+                    transition: all 2s ease-in;
+                
+                }
+                @keyframes ayush{
+                    0%{width:450px;}
+                    50%{ width:550px;}
+                    100%{ width: 800px;}
+                }
+                .one:hover{
+                    height: 520px;
+                    box-shadow: 2px 2px 50px 15px blueviolet;
+                }
+                
+
+            </style>
+</head>
+<body>
+    
+    <div class="one">
+
+    </div>
+
+</body>
+</html>

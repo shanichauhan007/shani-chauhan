@@ -1,0 +1,460 @@
+<html  xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+           <title>My Profile</title>
+            
+           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css" />
+           
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+          
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+    
+           <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+           <script src="JS/wow.min.js" type="text/javascript"></script>
+           <link href="CSS/animate.css" rel="stylesheet" type="text/css" />
+
+           <style type="text/css">
+            #HeaderDiv a.navbar-brand
+            {
+                font-family:Monotype Corsiva;
+                font-size:30px;    
+                color:white;
+            }
+            #navbarCollapse li b
+            {
+                color:white;
+            }
+
+            .fullscreen_bg 
+                {
+                    position:relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    overflow:hidden;
+                    z-index:-1;
+                }
+
+                .fullscreen_bg_video 
+                {
+                    position:absolute;
+                    width: auto;
+                    height: auto;
+                    min-width: 100%;
+	                min-height: 100%;
+	            }
+	            
+	            #Home
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:white;
+	                font-weight:bold
+	            }
+	            
+	            #HomeRow
+	            {
+	                padding-top:7%;   
+	            }
+	            #HomeRow a i.fa
+	            {
+	                color: white;
+	            }
+	            
+	            #HomeRow div.col-lg-offset-3
+	            {
+	                background:black; 
+	                padding-top:20px;
+	                padding-bottom:20px;
+	                border-radius:5px;
+	                box-shadow:0px 0px 10px rgb(241, 171, 171);   
+	            }
+	            
+            #Achievements
+	            {
+	                height:100vh;
+	                padding-bottom:40px;
+	                color:black;
+	                background-attachment:fixed;
+	                background-image:url('Images/77.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:30px;
+                    font-family:'Times New Roman', Times, serif;
+                    text-align: justify;
+	                line-height:1.5;
+	            }
+	            #AchievementsRow
+	            {
+	                padding-top:10%;
+	            }
+	            #Achievements h1
+	            {
+	                font-family:cursive;
+	            }
+                #Qualifications
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Images/88.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:30px;
+	                padding-bottom:40px;
+	                color:black;
+                    
+	            }
+	            #QualificationsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+                   
+	            }
+	            #QualificationsRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+                    color:transparent black;
+	                background-color:slategrey;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px grey;
+	                
+	            }
+	            #Qualifications table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Qualifications table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Qualifications table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            #Skills
+	            {
+                    height:100vh;
+	                background-attachment:fixed;
+	                background-image:url('Images/88.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:30px;
+	                padding-bottom:40px;
+	                color:black;
+	            }
+	            #SkillsRow
+	            {
+	                 margin-top:250px;
+	                 margin-bottom:100px;
+	            }
+	            #SkillsRow div.col-lg-offset-5
+	            {
+	                padding:10px;
+                    font-size: 30px;
+                    color: black;
+	                background-color:slategrey;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px gray;
+	                opacity:0.8;
+	            }
+	            #Skills table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Skills table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Skills table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+
+
+	            #Portfolio
+	            {
+	                height:100vh;
+	                padding-bottom:40px;
+	                color:white;
+	                font-size:20px;
+	                
+	            }
+	           
+	            #PortfolioRow h1
+	            {
+	                color:black;
+	                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	            }  
+	            
+	            #Portfolio div.col-lg-3
+	            {
+	                margin-bottom:20px;
+	            }  
+	            .ContainerImage
+	            {
+                    position: relative;
+                    width:100%;
+                }
+                .image 
+                {
+                  display: block;
+                  width: 100%;
+                  height: 200px;
+				  transition:1s;
+                  
+                }
+
+                .overlay 
+                {
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  top: 0;
+                  right:0;
+                  background:rgba(154, 125, 161, 0.7);
+                  overflow: hidden;
+                  height: 100%;
+                  width:100%;
+                  opacity:0;
+                  transition:0.5s;
+                }
+                .ContainerImage:hover .overlay 
+                {
+                  opacity:1;
+                }
+				.ContainerImage:hover .image 
+                {
+                  transform:rotateX(180deg);
+                }
+                .text 
+                {
+                  color: white;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  text-align: center;
+                }
+                
+	            @media(max-width:768px)
+	            {
+	                .fullscreen_bg_video 
+                    {
+                        left:-160%;
+                        width:260%;
+                    }
+                    #Achievement
+                    {
+                        height:auto;    
+                    }
+                }
+                @media(max-width:992px)
+                {
+                    #HomeRow
+	                {
+	                 padding-top:17%;    
+	                }    
+	                #AchievementRow
+	                {
+	                 padding-top:17%;    
+	                }
+                }
+
+            </style>
+
+
+            <script type="text/javascript">
+                new WOW().init();
+            </script>    
+    </head>
+
+      <body>
+             <div>
+                 <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="z-index:1000;">
+                     
+                      <div class="navbar-header" id="HeaderDiv">
+                           <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                           </button>
+                           <a href="#" class="navbar-brand" style="font-family:'Courier New', Courier, monospace;"><i>Krisha Donga</i></a>
+                      </div>
+
+                      <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right" style="font-size:13px;padding-right:15px;">
+                            <li><a href="#Home"><b>Intro</b></a></li>
+                            <li><a href="#Achievements"><b>Achievements</b></a></li>
+                            <li><a href="#Qualifications"><b>Qualifications</b></a></li>
+                            <li><a href="#Skills"><b>Skills</b></a></li>
+                            <li><a href="#Portfolio"><b>Projects</b></a></li>
+                      
+                        </ul>
+                  </div>
+                </nav>
+            </div>
+            <div id="Home" class="fullscreen_bg">
+              <video src="D:\Krisha Project\Videos\video.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+              <div class="row" id="HomeRow">
+                <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-6 col-md-6 col-sm-8 col-xs-12 wow slideInRight" data-wow-duration="3s">
+                        <center><img src="C:\Users\Admin\Downloads\krishaimage.jpeg" height="300px" width="auto" alt="Krisha Donga" /></center>
+                        <center><h2>Krisha Donga</h2></center>
+                        <center><h5>B.C.A. Student</h5><hr /></center>
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                                 <center><i class="fa fa-2x fa-envelope"></i> <a href="mailto:krishadonga123@gmail.com" style="color:white;">krishadonga123@gmail.com</a></center>
+                            </div>
+                        </div><hr />
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                                 <center><i class="fa fa-2x fa-map-marker"></i> Silver Oak College of Computer Application </center>
+                            </div>
+                        </div><hr />
+                        <center><a href=""><i class="fa fa-github"></i></a></center>
+                   </div>
+              </div>
+            </div>
+            <div id="Achievements" class="container-fluid" data-wow-duration="5s">
+                <div class="row" id="achievementsRow">
+                     <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                          <h1 class="text-center"><i class="fa fa-shield"></i>Achievements</h1><hr />
+                          <ul>
+                              <li>Achieving a certificate in accounting field Tally and CCC.</li>
+                              <li>Achieving a certificate in  sports fields in ,from New Vibyour International School.</li>
+                              <li>Also Achieving a certificate in sports fields in ,from Vedant International School.</li>
+                          </ul>
+                     </div>
+                </div>
+           </div>
+       
+        <div id="Qualifications" class="container-fluid">
+            <div class="row" id="QualificationsRow">
+                 <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInRight" data-wow-duration="5s">
+                      <br /><h2 class="text-center"><i class="fa fa-university"></i> Education Qualification</h2><hr />
+                      <table class="table table-responsive" style="color:black;">
+                          <tr>
+                              <td>Year<br />2021 - 2022</td>
+                              <td>Bachelor in Computer Application.<br /> from Silver Oak College of Computer Application,<br />Silver Oak University,<br />9.28.</td>
+                          </tr>
+                          <tr>
+                              <td>Year<br />2020 - 2021</td>
+                              <td>H.S.C. <br />from Vedant International School,<br />Gujarat board.<br /> 78%.</td>
+                          </tr>
+                          <tr>
+                              <td>Year<br />2019 - 2020</td>
+                              <td>S. S. C. <br /> from New Vibgyor Internationl School, <br /> Gujarat board.<br /> with 76%.</td>
+                          </tr>
+                      </table>
+                 </div>
+            </div>
+       </div>
+
+       <div id="Skills" class="container-fluid">
+            <div class="row" id="SkillsRow">
+                 <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-lg-6 col-md-6 col-sm-6 wow slideInRight" data-wow-duration="5s">
+                      <center><br /><h2><i class="fa fa-list-alt"></i> Technical Skills</h2><hr /></center>
+                      <table style="color:black;">
+                        <tr>
+                            <td></td>
+                            <td>HTML,CSS,BOOTSTRAP</td>
+                        </tr>
+                          <tr>
+                              <td>Programming Languages:</td>
+                              <td>C.</td>
+                          </tr>
+                          <tr>
+                              <td>Database:</td>
+                              <td> Basic knowledge of SQL.</td>
+                          </tr>
+                           <tr>
+                              <td>Others:</td>
+                              <td>Tally Accounting(TallyPrime & TallyERP9)</td>
+                          </tr>
+                      </table>
+                 </div>
+            </div>
+       </div>
+
+       
+       <div id="Portfolio" class="container-fluid wow bounceIn" data-wow-duration="5s">
+            <div class="row" id="PortfolioRow">
+                 <center><br /><h1><i class="fa fa-user-circle-o" style="margin-top: 30px;"></i> My Projects</h1><hr /></center>
+                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="ContainerImage">
+                          <img src="Images/22.jpg" alt="Krisha Donga" class="image" />
+                          <div class="overlay">
+                               <div class="text"></div>
+                          </div>
+                      </div>
+                 </div>
+            </div>
+       </div>
+
+
+        </body>
+
+</html>
